@@ -1,5 +1,14 @@
-# jasongross/alpine:v0.1
+# jasongross/alpine:v0.2
 FROM alpine:latest
 
 RUN apk update
-RUN apk add curl iputils redis nmap
+RUN apk add curl \
+iputils \
+redis \
+nmap \
+busybox-extras \
+aws-cli \
+postgresql-client \
+mysql-client \
+bind-tools \
+git
